@@ -99,7 +99,7 @@ contract MaticMeta {
 
 	function _invest(address payable referrer, uint8 plan, address payable sender, uint256 value) private {
 		require(value >= INVEST_MIN_AMOUNT);
-        require(plan < 6, "Invalid plan");
+        require(plan < 5, "Invalid plan");
         require(startUNIX < block.timestamp, "contract hasn`t started yet");
 		
 
