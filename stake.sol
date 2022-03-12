@@ -198,11 +198,11 @@ uint256 amount =0;
 		User storage user = users[msg.sender];
 
 		uint256 totalAmount = getUserDividends(msg.sender);
-	uint256 referralBonus = getUserReferralTotalBonus(msg.sender);
-		if (referralBonus > 0) {
-			user.totalBonus = 0;
-			totalAmount = totalAmount.add(referralBonus);
-		}
+	
+		
+			
+			
+		
 		require(totalAmount > 0, "User has no dividends");
 
 		uint256 contractBalance = address(this).balance;
